@@ -1,0 +1,9 @@
+num1 = (float(input()));
+num2 = (float(input()));
+num3 = (float(input()));
+num1 = 2 * num1;
+num2 = 3 * num2;
+num3 = 5 * num3;
+soma = num2 + num1 + num3;
+soma = soma / 10;
+print("MEDIA = %.1f" % soma);
