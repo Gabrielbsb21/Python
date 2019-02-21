@@ -1,5 +1,5 @@
 num = 1
-i = 0
+i = 0 #nao eh necessario declarar a variavel i para funcionar no for, se voce quiser que o for vai do i ate algum numero, basta colocar for i in range(4) (4 por exemplo), eu acabei declarando o i, pois esqueci desse fato, e no momento de interpretar o codigo o mesmo estava apontando que a variavel i nao estava declarada. 
 while(num != 0):
     num = int(input())
     i = 0
