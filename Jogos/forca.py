@@ -8,4 +8,4 @@ print('**********************')
 palavra_secreta = 'banana'
 acertou = False
 enforcou = False
-print("Fim do jogo")
+erros = 0
