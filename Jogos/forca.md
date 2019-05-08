@@ -4,3 +4,12 @@ Vou começar a desenvolver esse jogo de uma forma bem simples, e no decorrer do 
 E cada coisa que eu for implementando, vou documentar aqui.
 
 Em breve irei postar como que eu quero que o jogo se comporte, vou fazer de um modo que seja fácil implementar melhorias nele.
+--------------------------------------------------------------------------------------
+COMPORTAMENTO INICIAL DO JOGO
+
+Primeiro - vamos guardar a palavra numa variável
+Segundo - perguntar se o usuário quer colocar alguma dica para o outro jogador
+Terceiro - começar o jogo
+Quarto - o jogo vai prosseguir até o jogador acertar a palavra ou enforcar o boneco
+Quinto - jogo finaliza, e pergunta se querem jogar novamente                          
+---------------------------------------------------------------------------------------
