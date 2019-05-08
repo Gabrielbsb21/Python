@@ -1,11 +1,8 @@
 '''
 Esse é um jogo da forca bem simples, mais pra frente deixaremos a palavra secreta mais dinâmica
 '''
-print('**********************')
-print('***Bem vindo ao jogo da Forca!***')
-print('**********************')
+print("**********************")
+print("***Bem vindo ao jogo da Forca!***")
+print("**********************")
 
-palavra_secreta = 'banana'
-acertou = False
-enforcou = False
-erros = 0
+#EM CONSTRUÇÃO
