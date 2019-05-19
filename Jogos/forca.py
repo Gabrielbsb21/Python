@@ -1,9 +1,10 @@
 
-#jogo da forca
+# jogo da forca
 
-#funcoes que vou fazer para o codigo nao ficar tao bagunçado
+# funcoes que vou fazer para o codigo nao ficar tao bagunçado
 
 #coding: utf-8
+
 
 def inicial():
     a = '-'
@@ -17,13 +18,14 @@ def inicial():
     4- O jogo acaba quando o jogador_2 acertar a palavra ou morrer na forca.""")
     print()
 
+
 '''------------------
 parte principal do código'''
 
 inicial()
 print("Digite a palavra secreta, por favor")
 palavra_secreta = input()
-print() #para pular uma linha
+print()  # para pular uma linha
 print("Deseja dar uma dica para a palavra secreta?! Se sim, digite 1, caso contrario digite 2")
 num = int(input())
 if(num == 1):
@@ -31,4 +33,3 @@ if(num == 1):
     dica = input()
 elif(num == 2):
     print("Vamos prosseguir o jogo sem dica :(")
-    
