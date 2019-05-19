@@ -4,7 +4,8 @@ Vou começar a desenvolver esse jogo de uma forma bem simples, e no decorrer do 
 E cada coisa que eu for implementando, vou documentar aqui.
 
 IMPORTANTE!!! 
-  Esse pequeno jogo está sendo desenvolvide em Python 3, então se você for interpretar o jogo em python 2, provavelmente vai dar algum problema, use "python3 forca.py" dessa forma não vai ter erro.
+
+Esse pequeno jogo está sendo desenvolvido em Python 3, então se você for interpretar o jogo em python 2, provavelmente vai dar algum problema, use (se for executar pelo terminal) "python3 forca.py" dessa forma não vai ter erro.
 
 --------------------------------------------------------------------------------------
 COMPORTAMENTO INICIAL DO JOGO
