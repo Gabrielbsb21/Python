@@ -20,4 +20,7 @@ COMPORTAMENTO INICIAL DO JOGO
 
 **Quinto - jogo finaliza, e pergunta se querem jogar novamente**
 
+**Sexto - Quando o jogo finaliza, mostra o placar final**
+
 ---------------------------------------------------------------------------------------
+
