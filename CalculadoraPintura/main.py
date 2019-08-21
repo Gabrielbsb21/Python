@@ -1,7 +1,28 @@
-largura = float(input('Qual o largura do cômodo? '))
-altura = float(input('Qual a altura do cômodo? '))
-profundidade = float(input('Qual a profundidade do cômodo? '))
-teste = "aceito"
-area_paredes = float =  (2 * (largura + profundidade) * altura)
+from calculadora import Calculadora
+from comodo import Comodo
 
-print(f'A area das paredes é: {area_paredes}')
+calc = Calculadora()
+
+comodo = Comodo(
+    input('Qual a largura do cômodo? '),
+    input('Qual a profundidade do cômodo? ')
+)
+
+print(
+    "A area das paredes é:",
+    calc.calcular_area_paredes(
+        comodo
+    )
+)
+
+print(
+    'A área do teto é:',
+    calc.calcular_area_teto(
+        comodo
+    )
+)
+
+print(
+    'A litragem de tinta necessária é:',
+    calc.calcular_litragem_necessaria()
+)
