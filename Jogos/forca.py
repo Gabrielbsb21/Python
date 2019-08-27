@@ -38,5 +38,5 @@ print("VAMOS COMEÇAR\n")
 print("DIGITE UMA LETRA, POR FAVOR")
 
 letra = input()
-
+print("EM CONSTRUÇÃO")
 
