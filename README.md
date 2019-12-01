@@ -1,2 +1,5 @@
 # Python_URI
-Esse repositório vai conter algumas resoluções dos problemas contido no site "URI Online Judge". E alguns projetos que vou fazer, no intuito de praticar e ficar mais experiente na linguagem. 
+
+Esse repositório contém resoluções dos problemas da plataforma "URI ONLINE JUDGE", e projetos para o meu aprendizado em Python.
+
+
