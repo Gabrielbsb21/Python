@@ -1,4 +1,4 @@
-num = int(input())
+num = int(input()) #teste
 x = 0
 t = 0
 for i in range(0 , num):
