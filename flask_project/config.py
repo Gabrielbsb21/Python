@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import os
 import random
 import string
@@ -8,7 +10,7 @@ class Config(object):
     SECRET = 'ysb_92=qe#djf8%ng+a*#4rt#5%3*4k5%i2bck*gn@w3@f&-&'
     TEMPLATE_FOLDER = os.path.join(os.path.dirname(
         os.path.abspath(__file__)), 'templates')
-    ROOT_DIR = os.path.dirname(os.path.aspath(__file__))
+    ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     APP = None
 
 
