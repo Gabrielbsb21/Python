@@ -1,8 +1,7 @@
 from calculadora import Calculadora
 from comodo import Comodo
 
-
-calc = Calculadora()
+calc = Calculadora()  # estou instanciando o objeto
 
 comodo = Comodo(
     input('Qual a largura do cômodo? '),
@@ -10,20 +9,8 @@ comodo = Comodo(
 )
 
 print(
-    "A area das paredes é:",
-    calc.calcular_area_paredes(
-        comodo
-    )
-)
-
+    f'A area das paredes é: {calc.calcular_area_paredes(comodo)}')
 print(
-    'A área do teto é:',
-    calc.calcular_area_teto(
-        comodo
-    )
-)
-
+    f'A area do teto é: {calc.calcular_area_teto(comodo)}')
 print(
-    'A litragem de tinta necessária é:',
-    calc.calcular_litragem_necessaria()
-)
+    f'A litragem de tinta necessária é: {calc.calcular_litragem_necessaria()}')
