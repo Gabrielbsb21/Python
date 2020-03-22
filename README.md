@@ -1,5 +1,5 @@
-# Python_URI
+# Linguagem Python
 
-Esse repositório contém resoluções dos problemas da plataforma "URI ONLINE JUDGE" é do site "Code Abbey", e projetos para o meu aprendizado em Python.
+Esse repositório vai abranger projetos que desenvolvo na linguagem Python e seus Frameworks.
 
 
