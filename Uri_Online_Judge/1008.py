@@ -1,8 +1,8 @@
+# programa feito com a versão 3.8 do Python
 
-num = int (input());
-num2 = int(input());
-valor_hora = float(input());
-number = num;
-salario = float(num2 * valor_hora);
-print("NUMBER =", number);
-print("SALARY = U$ %.2f" %salario);
+num_func = int(input())
+hr_trabalhada = int(input())
+valor_hora = float(input())
+salario = hr_trabalhada * valor_hora
+print(f'NUMBER = {num_func}')
+print(f'SALARY = U$ {salario:.2f}')

@@ -1,4 +1,6 @@
-num1 = (int(input()))
-num2 = (int(input()));
-soma = num1 * num2;
-print("PROD =", soma);
+# programa feito com a versão 3.8 do Python
+
+num1 = int(input())
+num2 = int(input())
+PROD = num1 * num2
+print(f'PROD = {PROD}')

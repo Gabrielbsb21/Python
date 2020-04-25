@@ -1,12 +1,12 @@
-cod,num_pec,valor = input().split(" ");
-cod2,num2_pec,valor2 = input().split(" ");
-cod = int(cod);
-num_pec = int(num_pec);
-valor = float(valor);
-cod2 = int(cod2);
-num2_pec = int(num2_pec);
-valor2 = float(valor2);
-total1 = num_pec * valor;
-total2 = num2_pec * valor2;
-total2 = total1 + total2;
-print("VALOR A PAGAR: R$ %.2f" %total2);
+# programa feito com a versão 3.8 do Python
+
+cod_1, pecas_1, valor_1 = input().split(" ")
+cod_2, pecas_2, valor_2 = input().split(" ")
+cod_1 = int(cod_1)
+pecas_1 = int(pecas_1)
+valor_1 = float(valor_1)
+cod_2 = int(cod_2)
+pecas_2 = int(pecas_2)
+valor_2 = float(valor_2)
+total = pecas_1 * valor_1 + pecas_2 * valor_2
+print(f'VALOR A PAGAR: R$ {total:.2f}')
