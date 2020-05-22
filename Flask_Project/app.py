@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from flask import Flask
 
-# config import
 from config import app_config, app_active
 
 config = app_config[app_active]
@@ -16,6 +15,6 @@ def create_app(config_name):
 
     @app.route('/')
     def index():
-        return 'Hello Jedi!'
+        return 'Hello, Jedi!'
 
     return app

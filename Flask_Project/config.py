@@ -17,25 +17,23 @@ class DevelopmentConfig(Config):
     DEBUG = True
     IP_HOST = 'localhost'
     PORT_HOST = 8000
-    URL_MAIN = 'http//%s:%s/' % (IP_HOST, PORT_HOST)
+    URL_MAIN = 'http://%s:%s/' % (IP_HOST, PORT_HOST)
 
 
 class TestingConfig(Config):
     TESTING = True
     DEBUG = True
-    # Aqui geralmente fica um IP de um servidor na nuvem e não o endereço da máquina local
-    IP_HOST = 'localhost'
+    IP_HOST = 'localhost'  # Aqui é colocado um IP de um servidor de teste
     PORT_HOST = 5000
-    URL_MAIN = 'http//%s:%s/' % (IP_HOST, PORT_HOST)
+    URL_MAIN = 'http://%s:%s/' % (IP_HOST, PORT_HOST)
 
 
 class ProductionConfig(Config):
-    DEBUG = False
     TESTING = False
-    # Aqui geralmente fica um IP de um servidor na nuvem e não o endereço da máquina local
-    IP_HOST = 'localhost'
+    DEBUG = False
+    IP_HOST = 'localhost'  # Aqui é colocado um IP de um servidor de produção
     PORT_HOST = 8080
-    URL_MAIN = 'http//%s:%s/' % (IP_HOST, PORT_HOST)
+    URL_MAIN = 'http://%s:%s/' % (IP_HOST, PORT_HOST)
 
 
 app_config = {
