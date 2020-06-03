@@ -3,6 +3,9 @@ from flask import Flask
 from config import app_config, app_active
 from flask_sqlalchemy import SQLAlchemy
 from flask import request
+from flask import redirect
+from flask import render_template
+from controller.User import UserController
 
 config = app_config[app_active]
 
@@ -21,32 +24,37 @@ def create_app(config_name):
     @app.route('/')
     def index():
         return 'Hello, Jedi'
-    
+
     @app.route('/login/')
     def login():
         return 'Aqui vai ter uma tela de login'
-    
+
+    @app.route('/login/', methods=['POST'])
+    def login_post():
+        user = UserController()
+        email = request.form['email']
+        password = request.form['password']
+
+        result = user.login(email, password)
+
+        if result:
+            return redirect('/admin')
+        else:
+            return render_template('login.html', data={'status': 401, 'msg': 'Dados de usuário incorretos', 'type': None})
+
     @app.route('/recovery-password/')
     def recovery_password():
         return 'Tela para recuperação de senha'
-    
-    @app.route('/profile/<int:id>/action/<action>')
-    def profile(id, action):
-        return f'Ação {action} usuário de ID {id}' # f'string do Python
-    
-    @app.route('/profile/', methods=['POST']) # Enviar dados ao servidor
-    def create_profile():
-        username = request.form['username']
-        password = request.form['password']
 
-        return f'Essa rota possui um método POST e criará um usuário com os dados de usuários {username} e senha {password}'
-    
-    @app.route('/profile/<int:id>', methods=['PUT']) # Atualizar um dado no servidor
-    def edit_total_profile(id):
-        username = request.form['username']
-        password = request.form['password']
+    @app.route('/recovery-password/', methods=['POST'])
+    def send_recovery_password():
+        user = UserController()
 
-        return f'Essa rota possui um método PUT e editará o nome do usuário para {username} e a senha para {password}'
+        result = user.recovery(request.form['email'])
 
+        if result:
+            return render_template('recovery.html', data={'status': 200, 'msg': 'E-mail de recuperação enviado com sucesso'})
+        else:
+            return render_template('recovery.html', data={'status': 401, 'msg': 'Erro ao enviar e-mail de recuperação'})
 
     return app
