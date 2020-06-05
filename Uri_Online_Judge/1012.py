@@ -1,17 +1,19 @@
-PI = 3.14159;
-A,B,C = input().split(" ");
-A = float(A);
-B = float(B);
-C = float(C);
-triangulo = A * C / 2;
-circulo = C * C;
-circulo = PI * circulo;
-trapezio = A + B;
-trapezio = trapezio * C / 2;
-quadrado = B * B;
-retangulo = A * B;
-print("TRIANGULO: %.3f" %triangulo);
-print("CIRCULO: %.3f" %circulo);
-print("TRAPEZIO: %.3f" %trapezio);
-print("QUADRADO: %.3f" %quadrado);
-print("RETANGULO: %.3f" %retangulo);
+# programa feito com a versão 3.8 do Python
+PI = 3.14159
+
+valor_1, valor_2, valor_3 = input().split(' ')
+valor_1 = float(valor_1)
+valor_2 = float(valor_2)
+valor_3 = float(valor_3)
+triangulo = valor_1 * valor_3 / 2
+circulo = valor_3 ** 2 * PI
+trapezio = (valor_1 + valor_2) * valor_3 / 2
+quadrado = valor_2 ** 2
+retangulo = valor_1 * valor_2
+print(f'TRIANGULO: {triangulo:.3f}')
+print(f'CIRCULO: {circulo:.3f}')
+print(f'TRAPEZIO: {trapezio:.3f}')
+print(f'QUADRADO: {quadrado:.3f}')
+print(f'RETANGULO: {retangulo:.3f}')
+
+
