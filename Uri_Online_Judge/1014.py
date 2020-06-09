@@ -1,4 +1,6 @@
-dist = int(input());
-combus = float(input());
-total = dist / combus;
-print("%.3f km/l" %total);
+# programa feito com a versão 3.8 do Python
+
+dist = int(input())
+combust_gasto = float(input())
+result = dist / combust_gasto
+print(f'{result:.3f} km/l')
