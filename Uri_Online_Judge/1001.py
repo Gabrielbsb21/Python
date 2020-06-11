@@ -1,5 +1,5 @@
 # programa feito com a versão 3.8 do Python
 
-A = int(input())
-B = int(input())
-print(f'X = {A + B}')
+number_1 = int(input())
+number_2 = int(input())
+print(f'X = {number_1 + number_2}')
