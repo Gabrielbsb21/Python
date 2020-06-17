@@ -1,7 +1,6 @@
-final = 0;
-hr = int(input());
-vel_media = float(input());
-final = vel_media / 12;
-final = final * hr;
-print("%.3f" %final);
+# programa feito com a versão 3.8 do Python
 
+hours = int(input())
+velocity = int(input())
+quantity_liters = (velocity / 12) * hours
+print(f'{quantity_liters:.3f}')
