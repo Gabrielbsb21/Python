@@ -10,6 +10,15 @@ class Config(object):
         os.path.abspath(__file__)), 'templates')
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     APP = None
+    SQLALCHEMY_DATABASE_URI = 'mysql+mysqldb://user:passwd@host:port/database'
+    '''
+    - Preenca com os dados do seu banco de dados:
+    - User -> Usúario do banco
+    - Passwd -> Senha do usúario
+    - Host -> Geralmente no local fica localhost
+    - Port -> Geralmente 3306 no mysql, mas vai depender do banco que você vai usar
+    - Databse -> Nome do banco de dados 
+    '''
 
 
 class DevelopmentConfig(Config):
