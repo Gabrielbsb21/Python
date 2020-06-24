@@ -10,7 +10,7 @@ class Config(object):
         os.path.abspath(__file__)), 'templates')
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     APP = None
-    SQLALCHEMY_DATABASE_URI = 'mysql+mysqldb://user:passwd@host:port/database'
+    SQLALCHEMY_DATABASE_URI = 'mysql+mysqldb://root:MrRobot0116#@localhost:3306/project_flask' #mysql+mysqldb://user:passwd@host:port/database
     '''
     - Preenca com os dados do seu banco de dados:
     - User -> Usúario do banco
