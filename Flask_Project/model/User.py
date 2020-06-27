@@ -1,6 +1,7 @@
 from flask_sqlalchemy import flask_sqlalchemy
 from config import app_config, app_active
 from model.Role import Role
+from passlib.hash import pbkdf2_sha256
 
 config = app_config[app_active]
 db = SQLAlchemy(config.APP)
