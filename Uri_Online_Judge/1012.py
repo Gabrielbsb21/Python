@@ -2,9 +2,7 @@
 PI = 3.14159
 
 value_1, value_2, value_3 = input().split(' ')
-value_1 = float(value_1)
-value_2 = float(value_2)
-value_3 = float(value_3)
+value_1 = float(value_1); value_2 = float(value_2); value_3 = float(value_3)
 triangle = value_1 * value_3 / 2
 circle = value_3 ** 2 * PI
 trapezium = (value_1 + value_2) * value_3 / 2
