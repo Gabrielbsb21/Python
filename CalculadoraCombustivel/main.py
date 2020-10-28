@@ -1,31 +1,29 @@
-from calculo import Calculo 
+from calculo import Calculo
+
 
 def main():
-    print(
-        """
-        Esta aplicação tem como finalidade demonstrar os valores que serão gastos 
-        com combustível durante uma viagem, com base no consumo do seu veículo, e 
-        com a distância determinada por você!
-        """
-    )
+    print("""
+            Esta aplicação tem como finalidade demonstrar os valores que serão gastos com combustível durante a viagem,
+            com base no consumo do seu veículo, e com a distância e o preço do combustível determinado por você!""")
 
     print("Os combustíveis disponíveis para este cálculo são:")
-    print("  ° Álcool")
-    print("  ° Díesel")
-    print("  ° Gasolina")
-
-    print(" ")
+    print("º Gasolina")
+    print("° Álcool")
+    print("° Díesel")
 
     try:
-        distancia = float(input("Distância em Quilômetros a ser percorrida\n"))
+        tipo_combustivel = input(
+            "Digite o tipo de combutível que seu carro usa\n")
+        preco_combustivel = float(
+            input("Digite o preço do combustível que seu automovel usa\n"))
+        distancia = float(input("Distância em Quilômetros a ser pecorrida\n"))
         consumo = float(input("Consumo de combustível do veículo (km/l)\n"))
-        calculo = Calculo()
-        print(
-            calculo.calcular_gasto(distancia, consumo)
-        )
-    
-    except ValueError as error:
+        calculo = Calculo(preco_combustivel, tipo_combustivel)
+        print(calculo.gasto_combustivel(distancia, consumo))
+
+    except ValueError as erro:
         print("O valor recebido não é válido")
+
 
 if __name__ == "__main__":
     main()

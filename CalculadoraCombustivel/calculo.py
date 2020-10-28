@@ -1,24 +1,14 @@
 class Calculo():
-    def __init__(self):
-        self.__valor_gasolina = 4.50
-        self.__valor_alcool = 3.40
-        self.__valor_diesel = 3.80
+    def __init__(self, preco_combustivel, tipo_combustivel):
+        self.__preco_combustivel = preco_combustivel
+        self.__tipo_combustivel = tipo_combustivel
 
-    def calcular_gasto(self, distancia, consumo):
-        if(distancia <= 0 or consumo <= 0):
-            raise Exception('O valor recebido não pode ser menor ou igual a zero') 
+    def gasto_combustivel(self, distancia, consumo):
+        if distancia <= 0 or consumo <= 0:
+            raise Exception(
+                "O valor recebido não pode ser menor ou igual a zero")
 
-        gasto_gasolina = round(
-            (distancia/consumo) * self.__valor_gasolina,2)
-        gasto_alcool = round(
-            (distancia/ consumo) * self.__valor_alcool, 2)
-        gasto_diesel = round(
-            (distancia / consumo) * self.__valor_diesel, 2)
+        gasto_total = round(
+            (distancia / consumo) * self.__preco_combustivel, 2)
 
-        return f"""O valor total gasto será de: 
-                Gasolina: R$ {gasto_gasolina}
-                Alcool: R$ {gasto_alcool}
-                Diesel: R$ {gasto_diesel}
-                """ 
-
-#/OBS: No Python a função f'string funciona apenas da versão >= 3.6
+        return f""" O valor total gasto com a {self.__tipo_combustivel} será de:{gasto_total}"""
